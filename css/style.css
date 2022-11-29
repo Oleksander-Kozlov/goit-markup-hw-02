@@ -1,0 +1,104 @@
+:root {
+    --primery-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --accent-color: #4D5AE5;
+    ;
+    --hero-text-color: #FFFFFF;
+}
+
+body {
+    background-color: #ea1776;
+    color: var(--primery-text-color);
+}
+
+
+/* .list {
+    list-style: none;
+} */
+
+.logo {
+    color: var(--title-text-color);
+}
+
+.logo:hover {
+    color: var(--accent-color);
+}
+
+/* .logo:focus */
+
+/* основной цвет текста #2E2F42; */
+/* доп цвет #434455  #4D5AE5*/
+
+/* акцент #4D5AE5 */
+/* #FFFFFF; бекграунд */
+
+/* site nav */
+
+.site-nav .link {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--title-text-color);
+}
+
+.site-nav .link.current {
+    color: var(--title-text-color) .auth-nav .link {
+        text-decoration: none;
+    }
+
+    /* Hero */
+    .hero-title {
+        color: var(--hero-text-color);
+    }
+
+    .hero .btn {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 16px 32px;
+        gap: 10px;
+
+        position: absolute;
+        width: 170px;
+        height: 51px;
+        left: 635px;
+        top: 432px;
+
+        /* IRIS */
+
+        background: #4D5AE5;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+
+    /* Section */
+    .section-title {
+        color: var(--title-text-color);
+    }
+
+    /* features */
+    .features-list .title {
+        color: var(--title-text-color);
+    }
+
+    .features-list .description {
+        color: var(--primery-text-color);
+    }
+
+    /* button */
+    .button {
+        color: var(--hero-text-color);
+        background-color: var(--accent-color);
+    }
+
+    .button.primery {
+        color: var(--hero-text-color);
+        background-color: var(--accent-color);
+        border-color: transparent;
+
+    }
+
+    .button.secondary
