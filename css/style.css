@@ -55,16 +55,16 @@ body {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: var var(--success);
+    color: var var(--primery-brand);
 }
 
 .site-nav .link:active {
-    color: var(--light);
+    color: var(--text);
 }
 
-.site-nav .link.current {
+/* .site-nav .link.current {
     color: var(--primery-brand)
-}
+} */
 
 .auth-nav .link {
     color: var(--text);
