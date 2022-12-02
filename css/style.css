@@ -1,104 +1,234 @@
 :root {
-    --primery-text-color: #434455;
-    --title-text-color: #2E2F42;
-    --accent-color: #4D5AE5;
-    ;
+    --primery-brand: #4D5AE5;
+    --dark: #2E2F42;
+    --success: #31D0AA;
+    --text: #434455;
+    --subtle-text: #8E8F99;
+    --accent: #E7E9FC;
+    --light: #F4F4FD;
     --hero-text-color: #FFFFFF;
+    --click
 }
 
 body {
-    background-color: #ea1776;
-    color: var(--primery-text-color);
+    background-color: tomato;
+    /* var(--light); */
+    color: var(--dark);
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.002em;
+    font-size: 16px;
+    line-height: 1.5;
 }
-
-
-/* .list {
-    list-style: none;
-} */
 
 .logo {
-    color: var(--title-text-color);
+    color: var(--dark);
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.003em;
 }
 
-.logo:hover {
-    color: var(--accent-color);
+.part {
+    color: var(--primery-brand);
 }
 
-/* .logo:focus */
-
-/* основной цвет текста #2E2F42; */
-/* доп цвет #434455  #4D5AE5*/
-
-/* акцент #4D5AE5 */
-/* #FFFFFF; бекграунд */
+/* .logo:hover,
+.logo:focus {
+    color: var(--success);
+} */
 
 /* site nav */
 
+.list {
+    list-style: none;
+}
+
 .site-nav .link {
-    color: var(--accent-color);
+    color: var(--dark);
     text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: var(--title-text-color);
+    color: var var(--success);
+}
+
+.site-nav .link:active {
+    color: var(--light);
 }
 
 .site-nav .link.current {
-    color: var(--title-text-color) .auth-nav .link {
-        text-decoration: none;
-    }
+    color: var(--primery-brand)
+}
 
-    /* Hero */
-    .hero-title {
-        color: var(--hero-text-color);
-    }
+.auth-nav .link {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5
+}
 
-    .hero .btn {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 16px 32px;
-        gap: 10px;
+/* Hero */
+.hero {
+    background-color: var(--dark);
+}
 
-        position: absolute;
+.hero-title {
+    color: var(--hero-text-color);
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+.button.primery {
+    /* display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 32px;
+    gap: 10px;
+    position: absolute;
         width: 170px;
         height: 51px;
         left: 635px;
-        top: 432px;
+        top: 432px; */
 
-        /* IRIS */
+    color: var(--hero-text-color);
+    background-color: var(--primery-brand);
+    border-color: transparent;
+    font-family: inherit;
+    letter-spacing: 0.004em;
+    font-size: 16px;
+    line-height: 1.19;
+    background: var(--primery-brand);
+    box-shadow: 0px 4px 4px rgba(201, 232, 26, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-        background: #4D5AE5;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-    }
+.button.primery:hover,
+.button.primery:focus {
+    background: var(--primery-brand);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 4px;
+}
 
-    /* Section */
-    .section-title {
-        color: var(--title-text-color);
-    }
+.button.primery:active {
+    background: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
 
-    /* features */
-    .features-list .title {
-        color: var(--title-text-color);
-    }
+.button.secondary {}
 
-    .features-list .description {
-        color: var(--primery-text-color);
-    }
+/* .hero .btn,
+{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 16px 32px;
+gap: 10px;
 
-    /* button */
-    .button {
-        color: var(--hero-text-color);
-        background-color: var(--accent-color);
-    }
+font-size: 16px;
+line-height: 1.19;
+letter-spacing: 0.004em;
 
-    .button.primery {
-        color: var(--hero-text-color);
-        background-color: var(--accent-color);
-        border-color: transparent;
+position: absolute;
+width: 170px;
+height: 51px;
+left: 635px;
+top: 432px;
 
-    }
+/* background: var(--primery-brand);
+box-shadow: 0px 4px 4px rgba(201, 232, 26, 0.15);
+border-radius: 4px;
+}
 
-    .button.secondary
+/* Section */
+.section-title {
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.004em;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+/* softskills features*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.features-list .title {
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+    vertical-align: text-top;
+}
+
+.features-list .description {
+    color: var(--text);
+    font-weight: 400;
+    text-align: left;
+    vertical-align: text-top;
+}
+
+/* что мы делаем */
+/* наша кломанда */
+.section.wokers {
+    background-color: var(--light);
+}
+
+.team-list .wokers {
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+    vertical-align: text-top;
+    text-align: center;
+}
+
+.team-list .job-title {
+    color: var(--text);
+    font-weight: 400;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+/* футер */
+.footers .logo {
+    color: var(--primery-brand);
+}
+
+.footers,
+.footers .down {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.footers .text {
+    color: var(--accent);
+    font-weight: 400;
+    text-align: left;
+    vertical-align: text-top;
+}
