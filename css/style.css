@@ -124,7 +124,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.004em;
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--accent);
     border-radius: 4px;
     flex: none;
     order: 1;
